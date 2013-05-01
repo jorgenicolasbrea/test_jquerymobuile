@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Partitions and Expander Graphs Course</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css">
+    <link rel="stylesheet" src="css/my.css">
+	<script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
+    <script src="../demo 2/code/application.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="home">
+    <header data-role="header">
+        <h1>Graph Partitions and Expanders</h1>
+        <div data-role="navbar">
+		<ul>
+			<li><a href="#home" data-icon="home" data-theme="b" class="ui-btn-active">Home</a></li>
+			<li><a href="#lectures" data-icon="arrow-d" data-theme="b">Lectures</a></li>
+            <li><a href="#assignments" data-icon="arrow-d" data-theme="b">Assignments</a></li>
+		</ul>
+		</div>
+    </header>
+    
+    <section data-role="content">
+        <h3>Course description</h3>
+        	<div id="course_logo">
+           		<img src="../demo 2/images/course_logo.jpeg"  alt="course logo">
+            </div>
+         </h3>
+       	
+    	<p>This research-oriented graduate course focuses study algorithms for graph partitioning and clustering, 	constructions of expander graphs, and analysis of random walks. These are three topics that build on the same mathematical background and that have several important connections: for example it is possible to find graph clusters via random walks, and it is possible to use the linear programming approach to graph partitioning as a way to study random walks.</p>
+    </section>
+       
+    <footer data-role="footer" data-position="fixed">
+        <h4><a href="https://venture-lab.org/expanders/"> Course website </a> </h4>
+    </footer>
+</div>
+
+<div data-role="page" id="lectures">
+    <header data-role="header">
+        <h1>Graph Partition and Expanders</h1>
+        <div data-role="navbar">
+		<ul>
+			<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+			<li><a href="#lectures" data-icon="arrow-d" data-theme="b" class="ui-btn-active">Lectures	</a></li>
+            <li><a href="#assignments" data-icon="arrow-d" data-theme="b">Assignments</a></li>
+		</ul>
+	</div>
+    </header>
+      
+    <section data-role="content">
+		<h3>Video Lectures <br/><br/></h3>	
+        <ul data-role="listview" >
+            <li>
+                <a href="#">
+                    <h4>Week One: Introduction</h4>
+                    <h4>April 23, 2013</h4>                   
+                </a>
+                <a href="#week1_videos" data-rel="dialog" data-transition="flip">Video Lectures</a>
+            </li>
+            <li>
+                <a href="#">
+                	<h4>Week Two: Cheeger Inequalities</h4>
+                	<h4>April 30, 2013</h4>
+                </a>
+                <a href="#week2_videos" data-rel="dialog" data-transition="flip">Video Lectures</a>
+            </li>
+        </ul>
+    </section>
+       
+    <footer data-role="footer" data-position="fixed">
+        <h4><a href="https://venture-lab.org/expanders/"> Course website </a> </h4>
+    </footer>
+</div>
+
+<div data-role="page" id="assignments">
+    <header data-role="header">
+        <h1>Graph Partitions and Expanders</h1>
+        <div data-role="navbar">
+		<ul>
+			<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+			<li><a href="#lectures" data-icon="arrow-d" data-theme="b">Lectures</a></li>
+            <li><a href="#assignments" data-icon="arrow-d" data-theme="b" class="ui-btn-active">Assignments</a></li>
+		</ul>
+	</div>
+    </header>
+      
+    <section data-role="content">
+        <h3>Assignments <br/><br/></h3>	
+        <ul data-role="listview" >
+            <li>
+                <a href="#">
+                    <h4>Assignment 1</h4>
+                    <h4>Due: April 30, 2013</h4>                   
+                </a>
+                <a href="#assignment1" data-rel="dialog" data-transition="flip">Go to assignment</a>
+            </li>
+        </ul>
+    </section>
+       
+    <footer data-role="footer" data-position="fixed">
+        <h4><a href="https://venture-lab.org/expanders/"> Course website </a> </h4>
+    </footer>
+</div>
+
+<div data-role="page" id="week1_videos">
+    <header data-role="header">
+    	<h1>Lecture Video</h1>
+    </header>
+    <section data-role="content">
+    	
+    	<div id="cPbEpbQAwJs"></div>
+    </section>
+       
+    <footer data-role="footer">
+        <h4>&copy; 2011</h4>
+    </footer>
+</div>
+
+<div data-role="page" id="assignment1">
+    <header data-role="header">
+        <h1>Assignment</h1>
+    </header>
+    <section data-role="content">
+    	<h3>Assignment</h3>
+        <p>
+        	Problem 1.1: <br/>Let L be the Laplacian matrix of a regular undirected graph G=(V,E), and let 0=λ1≤λ2≤⋯≤λn be the eigenvalues of L in non-decreasing order, counted with multiplicities, where n=|V| is the number of vertices. Suppose that λ2=0 and λk>0 for some k≥3. Let also x be an eigenvector of λ2.<br/>Prove that the entries of x take at most k−1 distinct values.
+        </p>
+        <p>
+        Problem 1.2:<br/>Let L be the Laplacian matrix of a regular undirected graph G=(V,E), and let 0=λ1≤λ2≤⋯≤λn be the eigenvalues of L in non-decreasing order, counted with multiplicities, where n=|V| is the number of vertices. Suppose that λn−1=2.<br/>Prove that G is disconnected.
+        </p>
+        
+    </section>
+    
+</div>
+
+<div data-role="page" id="sampson">
+    <header data-role="header">
+        <h1>SJV Town Hall</h1>
+        <div data-role="navbar">
+		<ul>
+			<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
+			<li><a href="#speakers" data-icon="star" data-theme="b">Speakers</a></li>
+            <li><a href="#contact" data-icon="grid" data-theme="b">Contact Us</a></li>
+		</ul>
+	</div>
+    </header>
+    
+    <section data-role="content">
+    	<h3>Fossil Threads<br>in the Web of Life</h3>
+		<img src="../demo 2/images/sampson_dinosaur.jpg" alt="Scott Sampson" width="260" />
+		<p>What's 75 million years old and brand spanking new? A teenage 
+		Utahceratops! Come to the Saroyan, armed with your best dinosaur roar, when Scott Sampson, 
+		Research Curator at the Utah Museum of Natural History, steps to the podium. Sampson's 
+		research has focused on the ecology and evolution of late Cretaceous dinosaurs and he has 
+		conducted fieldwork in a number of countries in Africa.</p>
+		<p>Scott Sampson is a Canadian-born paleontologist who received his Ph.D. in zoology from 
+		the University of Toronto. His doctoral work focused on two new species of ceratopsids, or
+		horned dinosaurs, from the Late Cretaceous of Montana, as well as the 
+		growth and function of certopsid horns and frills.</p>
+		<p>Following graduation in 1993, Sampson spent a year working at the American 
+		Museum of Natual History in New York City, followed by five years as assistant professor of 
+		anatomy at the New York College of Osteopathic Medicine on Long Island. He arrived at the 
+		University of Utah accepting a dual position as assistant professor in the Department of 
+		Geology and Geophysics and curator of vertebrate paleontology at the Utah Museum of Natural 
+		History. His research interests largely revolve around the phylogenetics, functional 
+		morphology, and evolution of Late Cretaceous dinosaurs.</p>
+		<p>In addition to his museum and laboratory-based studies, Sampson has conducted paleontological 
+		work in Zimbabwe, South Africa, and Madagascar, as well as the United States and Canada. He was 
+		also the on-the-air host for the Discovery Channel's Dinosaur Planet and recently completed a 
+		book, <em>Dinosaur Odyssey: Fossil Threads in the Web of Life</em>, which is one of the most 
+		comprehensive surveys of dinosaurs and their worlds to date.</p>
+		<p><a href="#" data-role="button" data-rel="back" data-theme="b">Back to previous page</a></p>
+    </section>
+       
+    <footer data-role="footer">
+        <h4>&copy; 2011</h4>
+    </footer>
+</div>
+</body>
+</html>
