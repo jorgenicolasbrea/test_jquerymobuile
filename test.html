@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css">
     <link rel="stylesheet" href="css/my.css">
 	<script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+    <script src="code/application.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
-    <script src="../demo 2/code/application.js"></script>
 </head>
 
 <body>
 <div data-role="page" id="home">
-    <header data-role="header">
+    <div data-role="header">
         <h1>Graph Partitions and Expanders</h1>
         <div data-role="navbar">
 		<ul>
@@ -22,9 +22,9 @@
             <li><a href="#assignments" data-icon="arrow-d" data-theme="b">Assignments</a></li>
 		</ul>
 		</div>
-    </header>
+    </div>
     
-    <section data-role="content">
+    <div data-role="content">
         <h3>Course description</h3>
         	<div id="course_logo">
            		<img src="../demo 2/images/course_logo.jpeg"  alt="course logo">
@@ -32,15 +32,15 @@
          </h3>
        	
     	<p>This research-oriented graduate course focuses study algorithms for graph partitioning and clustering, 	constructions of expander graphs, and analysis of random walks. These are three topics that build on the same mathematical background and that have several important connections: for example it is possible to find graph clusters via random walks, and it is possible to use the linear programming approach to graph partitioning as a way to study random walks.</p>
-    </section>
+    </div>
        
-    <footer data-role="footer" data-position="fixed">
+    <div data-role="footer" data-position="fixed">
         <h4><a href="https://venture-lab.org/expanders/"> Course website </a> </h4>
-    </footer>
+    </div>
 </div>
 
 <div data-role="page" id="lectures">
-    <header data-role="header">
+    <div data-role="header">
         <h1>Graph Partition and Expanders</h1>
         <div data-role="navbar">
 		<ul>
@@ -49,35 +49,45 @@
             <li><a href="#assignments" data-icon="arrow-d" data-theme="b">Assignments</a></li>
 		</ul>
 	</div>
-    </header>
+    </div>
       
-    <section data-role="content">
+    <div data-role="content">
 		<h3>Video Lectures <br/><br/></h3>	
-        <ul data-role="listview" >
+        <ul data-role="listview">
             <li>
-                <a href="#">
-                    <h4>Week One: Introduction</h4>
-                    <h4>April 23, 2013</h4>                   
-                </a>
-                <a href="#week1_videos" data-rel="dialog" data-transition="flip">Video Lectures</a>
-            </li>
-            <li>
-                <a href="#">
-                	<h4>Week Two: Cheeger Inequalities</h4>
-                	<h4>April 30, 2013</h4>
-                </a>
-                <a href="#week2_videos" data-rel="dialog" data-transition="flip">Video Lectures</a>
+                 <h4>Week One: Introduction</h4>  
+                    <ul data-role="listview">
+                    	<li data-transition="flip" class="video_play" id="cPbEpbQAwJs">part 1</li> 
+                        <li class="video_play" id="vpJVA99_Y1Q">part 2</li>
+                        <li class="video_play" id="__NEJX-PHDU">part 3</li>
+                        <li class="video_play" id-"DiSHmzzipZ0">part 4</li> 
+                        <li class="video_play" id="ydi5_kKAO6Q">part 5</li> 
+                        <li class="video_play" id="iu6EX9Xt3gA">part 6</li>
+                        <li class="video_play" id="fiLy7auwdS4">part 7</li>
+                        <li class="video_play" id-"4xthM7wjSG8">part 8</li> 
+                   </ul> 
             </li>
         </ul>
-    </section>
+    </div>
        
-    <footer data-role="footer" data-position="fixed">
+    <div data-role="footer" data-position="fixed">
         <h4><a href="https://venture-lab.org/expanders/"> Course website </a> </h4>
-    </footer>
+    </div>
 </div>
 
+
+<div data-role="page" id="video_player_page" data-add-back-btn="true">
+	<div data-role="header">
+    	<h1>Play Video</h1>
+    	<!--
+    	<p><a href="" data-rel="back">Back</a></p>
+       	<div class="back_button" data-role="button" data-rel="back" value="done">Done</div>
+        -->
+    </div>	         
+</div>
+          
 <div data-role="page" id="assignments">
-    <header data-role="header">
+    <div data-role="header">
         <h1>Graph Partitions and Expanders</h1>
         <div data-role="navbar">
 		<ul>
@@ -86,9 +96,9 @@
             <li><a href="#assignments" data-icon="arrow-d" data-theme="b" class="ui-btn-active">Assignments</a></li>
 		</ul>
 	</div>
-    </header>
+    </div>
       
-    <section data-role="content">
+    <div data-role="content">
         <h3>Assignments <br/><br/></h3>	
         <ul data-role="listview" >
             <li>
@@ -99,28 +109,19 @@
                 <a href="#assignment1" data-rel="dialog" data-transition="flip">Go to assignment</a>
             </li>
         </ul>
-    </section>
+    </div>
        
-    <footer data-role="footer" data-position="fixed">
+    <div data-role="footer" data-position="fixed">
         <h4><a href="https://venture-lab.org/expanders/"> Course website </a> </h4>
-    </footer>
+    </div>
 </div>
 
-<div data-role="page" id="week1_videos" onload="video_player('cPbEpbQAwJs')">
-    <header data-role="header">
-    	<h1>Lecture Video</h1>
-    </header>
-    <section data-role="content">    	
-    	<div id="cPbEpbQAwJs"></div>
-    </section>
-  
-</div>
 
 <div data-role="page" id="assignment1">
     <header data-role="header">
         <h1>Assignment</h1>
     </header>
-    <section data-role="content">
+    <div data-role="content">
     	<h3>Assignment</h3>
         <p>
         	Problem 1.1: <br/>Let L be the Laplacian matrix of a regular undirected graph G=(V,E), and let 0=λ1≤λ2≤⋯≤λn be the eigenvalues of L in non-decreasing order, counted with multiplicities, where n=|V| is the number of vertices. Suppose that λ2=0 and λk>0 for some k≥3. Let also x be an eigenvector of λ2.<br/>Prove that the entries of x take at most k−1 distinct values.
@@ -129,7 +130,6 @@
         Problem 1.2:<br/>Let L be the Laplacian matrix of a regular undirected graph G=(V,E), and let 0=λ1≤λ2≤⋯≤λn be the eigenvalues of L in non-decreasing order, counted with multiplicities, where n=|V| is the number of vertices. Suppose that λn−1=2.<br/>Prove that G is disconnected.
         </p>
         
-    </section>
-    
+    </div>
 </body>
 </html>
